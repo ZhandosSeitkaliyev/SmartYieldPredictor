@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-Process | Where-Object { $_.ProcessName -match \"node|vite\" } | Select-Object ProcessName, Id, CPU | Format-Table)",
+      "PowerShell(head -50)"
+    ]
+  }
+}
